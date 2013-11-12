@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- DBUnit flatXml DataFile -->
+<dataset>
+
+
+	  <DATA_ORIGINAL 
+			ID='Id139' 
+			FORM='Form680' 
+			REMOTE_URL='RemoteUrl224' 
+			NOTICE_TIME='2013-07-26 20:41:40.494' 
+			COLL_TIME='2013-07-26 20:41:40.494' 
+			LOCALE_URL='LocaleUrl864' 
+			LOCALE_FMT_URL='LocaleFmtUrl347' 
+			FILENAME='Filename157' 
+			FMT_FNAME='FmtFname27' 
+			FILE_SIZE='515' 
+			STATUS='816' 
+			BATCH='564' 
+			JOB_ID='JobId890' 
+	  />	
+  
+</dataset>

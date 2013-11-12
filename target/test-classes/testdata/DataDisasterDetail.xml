@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- DBUnit flatXml DataFile -->
+<dataset>
+
+
+	  <DATA_DISASTER_DETAIL 
+			ID='Id722' 
+			EXACT_VALUE='081' 
+			DESCP='Descp482' 
+			FILED1='Filed1447' 
+			FILED2='Filed2328' 
+			FILED3='Filed3637' 
+			LABELED='7' 
+			ITENTITY_ID='ItentityId710' 
+			MEASUREMENT_ID='MeasurementId510' 
+	  />	
+  
+</dataset>

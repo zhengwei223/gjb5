@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pool>
+	<database name="orcl">
+	    <url>jdbc:oracle:thin:@localhost:1521:XE</url>
+	    <driverName>oracle.jdbc.driver.OracleDriver</driverName>
+	    <user>gjb5</user>
+	    <pwd>dev123</pwd>
+	    <maxActive>10</maxActive>
+	    <maxIde>3</maxIde>
+	    <maxWait>1000</maxWait><!-- 等待1秒钟如果不能获取连接，将报异常 -->
+	</database>
+</pool>

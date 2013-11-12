@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- DBUnit flatXml DataFile -->
+<dataset>
+
+
+	  <RIGHTS_ROLE 
+			ID='Id968' 
+			NAME='Name514' 
+			DESCP='Descp987' 
+			STATUS='1' 
+			REMARK='Remark329' 
+	  />	
+  
+</dataset>

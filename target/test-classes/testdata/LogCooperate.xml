@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- DBUnit flatXml DataFile -->
+<dataset>
+
+
+	  <LOG_COOPERATE 
+			ID='Id753' 
+			REPORT_TIME='2013-07-26 20:41:41.791' 
+			LOG_TITLE='LogTitle841' 
+			LOG_MESSAGE='LogMessage922' 
+			STATUS='032' 
+			EQ_ID='EqId899' 
+	  />	
+  
+</dataset>

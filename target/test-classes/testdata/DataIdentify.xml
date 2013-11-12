@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- DBUnit flatXml DataFile -->
+<dataset>
+
+
+	  <DATA_IDENTIFY 
+			ID='Id110' 
+			CREATE_TIME='2013-07-26 20:41:38.855' 
+			EVENT_TIME='2013-07-26 20:41:38.855' 
+			LOCATION='Location677' 
+			LONGITUDE='Longitude8' 
+			LATITUDE='Latitude46' 
+			TXT_INFO1='TxtInfo1060' 
+			TXT_INFO2='TxtInfo2287' 
+			SEMANTICS='Semantics233' 
+			MAGNITUDE='484' 
+			SEISESTHESIA='194' 
+			REPORT_MAN='ReportMan8' 
+			REPORT_TIME='2013-07-26 20:41:38.855' 
+			MANUAL='7' 
+			ORIGINAL_ID='OriginalId245' 
+	  />	
+  
+</dataset>
