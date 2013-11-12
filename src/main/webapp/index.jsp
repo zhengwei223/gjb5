@@ -23,7 +23,7 @@
 <link rel="stylesheet" type="text/css"
 	href="<c:url value="/index.css"/>">
 </head>
-<body class="easyui-layout">
+<body class="easyui-layout" >
 	<div region="north" border="true" class="cs-north">
 		<div class="cs-north-bg">
 			<!-- logo区域 -->
@@ -81,21 +81,21 @@
 					data-options="menu:'#mm_0'">现场指挥数据处理</a>
 				<div id="mm_0" style="width: 150px;">
 					<div>
-						<a href="javascript:void(0);" src="${ctx }/html/汇总统计.html"
+						<a href="javascript:void(0);" src="${ctx }/html/新页面_2.html"
 							class="cs-navi-tab">图像数据</a>
 					</div>
 					<div>
-						<a href="javascript:void(0);" src="${ctx }/html/汇总统计.html"
+						<a href="javascript:void(0);" src="${ctx }/html/列表_8.html"
 							class="cs-navi-tab">视频数据</a>
 					</div>
 					<div>
-						<a href="javascript:void(0);" src="${ctx }/html/汇总统计.html"
+						<a href="javascript:void(0);" src="${ctx }/html/网络媒体.html"
 							class="cs-navi-tab">文本数据</a>
 					</div>
 				</div>
 				</p>
 				
-				<a href="javascript:void(0);" src="${ctx }/pages/PageInfo/list.do"
+				<a href="javascript:void(0);" src="${ctx }/pages/Pageinfo/list.do"
 					class="cs-navi-tab">网络媒体数据处理</a>
 				</p>
 			</div>

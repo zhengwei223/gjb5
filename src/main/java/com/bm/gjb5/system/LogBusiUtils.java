@@ -29,6 +29,11 @@ public class LogBusiUtils {
 		}
 				
 	}
+	/**
+	 * 
+	 * @param content 内容
+	 * @param optype 操作类型
+	 */
 	public static void log(String content, DbOpType optype) {
 		String op_user = "";
 		String ip = "";
