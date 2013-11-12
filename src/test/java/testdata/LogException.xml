@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- DBUnit flatXml DataFile -->
+<dataset>
+
+
+	  <LOG_EXCEPTION 
+			ID='Id183' 
+			EVENT_TIME='2013-07-26 20:41:42.228' 
+			OUTLINE='Outline625' 
+			CALL_STACK='CallStack375' 
+			SUBMODULE='Submodule606' 
+			EXCEPTION_LEVEL='315' 
+			STATUS='485' 
+			EQ_ID='EqId502' 
+	  />	
+  
+</dataset>

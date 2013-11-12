@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- DBUnit flatXml DataFile -->
+<dataset>
+
+
+	  <SYS_DISASTER_MEASUREMENT 
+			ID='Id385' 
+			PREDICATE_ID='PredicateId411' 
+			MEASURE='Measure897' 
+			UNIT='Unit4' 
+	  />	
+  
+</dataset>

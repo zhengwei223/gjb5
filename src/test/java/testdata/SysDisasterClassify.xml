@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- DBUnit flatXml DataFile -->
+<dataset>
+
+
+	  <SYS_DISASTER_CLASSIFY 
+			ID='Id249' 
+			NAME='Name658' 
+			DESCP='Descp289' 
+			P_ID='Pid476' 
+	  />	
+  
+</dataset>

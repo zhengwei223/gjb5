@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- DBUnit flatXml DataFile -->
+<dataset>
+
+
+	  <SYS_EARTHQUAKE 
+			EVENT_ID='EventId043' 
+			EVENT_TIME='2013-07-26 20:41:50.206' 
+			LONGITUDE='Longitude9' 
+			LATITUDE='Latitude10' 
+			FOCAL_DEPTH='557' 
+			MAGNITUDE='973' 
+			LOCATION='Location637' 
+			START_TIME='2013-07-26 20:41:50.206' 
+			END_TIME='2013-07-26 20:41:50.206' 
+			STATUS='118' 
+	  />	
+  
+</dataset>

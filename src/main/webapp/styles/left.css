@@ -1,0 +1,53 @@
+
+.urbangreymenu {
+	width: 190px; /*width of menu*/
+}
+
+.urbangreymenu .headerbar {
+	font: bold 13px Verdana;
+	color: #8B8B7A;
+	background: #fff url(images/left/arrowstop.gif) no-repeat 4px 3px;
+	/*last 2 values are the x and y coordinates of bullet image*/
+	margin-bottom: 0; /*bottom spacing between header and rest of content*/
+	margin-top: 0;
+	text-transform: uppercase;
+	padding: 3px 0 3px 20px; /*31px is left indentation of header text*/
+	cursor:pointer;
+}
+
+.urbangreymenu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 0;
+	/*bottom spacing between each UL and rest of content*/
+}
+
+.urbangreymenu ul li {
+	padding-bottom: 1px; /*bottom spacing between menu items*/
+}
+
+.urbangreymenu ul li a {
+	font: normal 12px Arial;
+	color: black;
+	background: #fff;
+	display: block;
+	padding: 2px 0;
+	line-height: 17px;
+	padding-left: 19px; /*link text is indented 8px*/
+	text-decoration: none;
+}
+
+.urbangreymenu ul li a:visited {
+	color: black;
+}
+
+.urbangreymenu ul li a:hover { /*hover state CSS*/
+	color: white;
+	background: #3A5FCD;
+}
+
+.urbangreymenu .currentClickMenu {
+	color: white !important;
+	background: #3A5FCD;
+}

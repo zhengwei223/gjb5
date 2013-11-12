@@ -1,0 +1,17 @@
+input.rightformcss,select.rightformcss,textarea.rightformcss {
+	border: 1px solid green;
+	padding: 1px;
+}
+
+.failmsg {
+	color: #a40000;
+}
+
+.msgvaluecss {
+	font-style: italic;
+}
+
+input.failformcss,select.failformcss,textarea.failformcss {
+	border: 1px solid #a40000;
+	padding: 1px;
+}

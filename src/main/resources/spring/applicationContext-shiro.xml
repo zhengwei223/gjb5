@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+	xmlns:cache="http://www.springframework.org/schema/cache"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.2.xsd
+		http://www.springframework.org/schema/cache http://www.springframework.org/schema/cache/spring-cache-3.2.xsd">
+
+	<!-- Shiro Filter 拦截器相关配置 -->
+	<bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
+		<!-- securityManager -->
+		<property name="securityManager" ref="securityManager" />
+		<!-- 登录路径 -->
+		<property name="loginUrl" value="/login.jsp" />
+		<!-- 登录成功后跳转路径 -->
+		<property name="successUrl" value="/index.jsp" />
+		<!-- 授权失败跳转路径 -->
+		<property name="unauthorizedUrl" value="/unauthorized.jsp" />
+
+		<property name="filters">
+			<util:map>
+				<entry key="authc" value-ref="myAuthenFilter" />
+				<entry key="perms" value-ref="URLPermissionsFilter" />
+			</util:map>
+		</property>
+		<!-- 过滤链定义 -->
+		<property name="filterChainDefinitions">
+			<value>
+				/=authc
+				/login.jsp = authc
+				/index.jsp = authc
+				/pages/*/*.do = authc,perms
+				#/pages/* = authc
+				/logout.do = logout
+			</value>
+		</property>
+	</bean>
+
+	<!-- 自定义验证拦截器 -->
+	<bean id="myAuthenFilter" class="javacommon.shiro.AuthenticationFilter" />
+	<!-- 自定义鉴权拦截器 -->
+	<bean id="URLPermissionsFilter" class="javacommon.shiro.URLPermissionsFilter" />
+
+	<!-- securityManager -->
+	<bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
+		<property name="realm" ref="myRealm" />
+		<property name="cacheManager" ref="cacheManager"></property>
+	</bean>
+
+
+	<bean id="lifecycleBeanPostProcessor" class="org.apache.shiro.spring.LifecycleBeanPostProcessor" />
+
+	<!-- 自定义Realm实现 -->
+	<bean id="myRealm" class="javacommon.shiro.CustomRealm">
+		<!-- 密码hash算法 -->
+		<property name="credentialsMatcher">
+			<bean class="org.apache.shiro.authc.credential.HashedCredentialsMatcher">
+				<property name="hashAlgorithmName" value="SHA-1"></property>
+			</bean>
+		</property>
+		<!-- <property name="ini" ref="ini"></property> -->
+		<!-- 缓存的名字 -->
+		<property name="authorizationCacheName" value="shiroAuthorizationCache" />
+	</bean>
+
+	<!-- <bean id="ini" class="org.apache.shiro.config.IniFactorySupport" factory-method="loadDefaultClassPathIni"></bean> -->
+
+	<!-- spring对ehcache的缓存工厂支持 -->
+	<bean id="ehCacheManagerFactory"
+		class="org.springframework.cache.ehcache.EhCacheManagerFactoryBean">
+		<property name="configLocation" value="classpath:ehcache.xml" />
+	</bean>
+
+	<!-- 使用缓存annotation 配置 -->
+	<cache:annotation-driven cache-manager="ehCacheManager" />
+
+	<bean id="ehCacheManager" class="org.springframework.cache.ehcache.EhCacheCacheManager">
+		<property name="cacheManager" ref="ehCacheManagerFactory"></property>
+	</bean>
+
+	<!-- shiro对ehcache的缓存管理直接使用spring的缓存工厂 -->
+	<bean id="cacheManager" class="org.apache.shiro.cache.ehcache.EhCacheManager">
+		<property name="cacheManager" ref="ehCacheManagerFactory" />
+	</bean>
+</beans>
+

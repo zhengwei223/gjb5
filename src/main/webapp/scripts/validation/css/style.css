@@ -1,0 +1,378 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body,button,input,select,textarea {
+	font: 12px/1.5 tahoma, arial, \5b8b\4f53
+
+}
+
+body {
+	margin: 0 auto;
+	_height: 100%;
+	_overflow: auto;
+	line-height: 25px;
+	background-color: rgb(255, 255, 255);
+}
+
+html {
+	_overflow: hidden
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-size: 100%
+}
+
+address,cite,dfn,em,var {
+	font-style: normal
+}
+
+code,kbd,pre,samp {
+	font-family: courier new, courier, monospace
+}
+
+small {
+	font-size: 12px
+}
+
+ul,ol,li,dl,dt,dd {
+	list-style: none
+}
+
+sup {
+	vertical-align: text-top
+}
+
+sub {
+	vertical-align: text-bottom
+}
+
+img {
+	border: 0
+}
+fieldset {
+	margin: 10px 10px 0px 0px; 
+	padding: 15px 10px; 
+	border: 1px solid rgb(239, 201, 134);
+}
+legend {
+	color:#000099;
+	background-color: rgb(255, 198, 47);
+	padding-top: 2px;
+	padding-right: 5px;
+	padding-bottom: 2px;
+	padding-left: 5px;
+	margin: 0px;
+}
+button,input,select,textarea {
+	font: 12px/1.5 tahoma, arial, sans-serif;
+	vertical-align: middle
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+
+table tr {
+	margin: 2px 0 2px 0;
+}
+table tr th{
+	text-align: left;
+}
+table tr td {
+	padding: 0px 3px 0 3px;
+}
+
+A {
+	FONT-SIZE: 12px;
+	COLOR: #669900;
+	LINE-HEIGHT: 140%;
+	FONT-FAMILY: "宋体";
+	text-decoration: none;
+}
+
+A:hover {
+	COLOR: black;
+	LINE-HEIGHT: 140%;
+	FONT-FAMILY: "宋体";
+	text-decoration: underline;	
+}
+
+A:active {
+	FONT-SIZE: 12px;
+	COLOR: #669900;
+	LINE-HEIGHT: 140%;
+	FONT-FAMILY: "宋体";
+	text-decoration: underline;	
+}
+
+A:visited {
+	FONT-SIZE: 12px;
+	COLOR: #669900;
+	LINE-HEIGHT: 140%;
+	FONT-FAMILY: 宋体
+}
+
+.input_bg {
+	FONT-SIZE: 12px;
+	LINE-HEIGHT: 140%;
+	FONT-FAMILY: 宋体;
+	background-color: #ececec
+}
+
+h1 {
+	background-color: #EAEAEA;
+	color: #27408B;
+	font-family: "华文新魏";
+	width: 80%;
+}
+
+h2 {
+	background-color: #EAEAEA;
+	color: #27408B;
+	font-family: "华文新魏";
+	width: 80%;
+}
+
+h3 {
+	background-color: #EAEAEA;
+	color: #27408B;
+	font-family: "华文新魏";
+	width: 80%;
+	height: 30px;
+	padding-top: 10px;
+}
+
+.button {
+	display: inline-block;
+	position: relative;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	background-color: #d42400;
+	background: -webkit-gradient(linear, 0 0, 0 70%, from(#ed2800),to(#b21e00) );
+	background: -moz-linear-gradient(#ed2800, #b21e00 70%);
+	background: linear-gradient(#ed2800, #b21e00 70%);
+	-pie-background: linear-gradient(#ed2800, #b21e00 70%);
+	behavior: url(js/PIE.htc);
+	padding: 0 18px 0 18px;
+	line-height: 35px;
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+	-webkit-transition-duration: 0.5s;
+}
+
+.button:hover {
+	background: #fff;
+	color: #000;
+}
+
+.title {
+	border-bottom-color: rgb(204, 204, 204);
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	/* border: 1px solid rgb(255, 255, 255); */
+	height: 14px;
+	line-height: 16px;
+	overflow: hidden;
+	color: rgb(101, 101, 101);
+	font-size: 14px;
+	font-weight: 700;
+	background-color:#CCCCCC;
+	/* margin-top: 10px; */
+	padding-top: 9px;
+	padding-right: 10px;
+	padding-bottom: 9px;
+	padding-left: 10px;	
+}
+
+.boxtable {
+	border-collapse: collapse;
+	border-width: 0;
+	font-size: 9pt;
+	padding: 0;
+}
+
+.mouseOver {
+	background-color: #E4EBCD;
+	text-align: center;
+	cursor:pointer;
+}
+
+.mouseOut {
+	background-color: #EBF2FC;
+	text-align: center;
+}
+
+.mouseOut1 {
+	background-color: #D9E3F4;
+	text-align: left;
+}
+
+.mouseOut0 {
+	background-color: #F5F9FE;
+	text-align: left;
+}
+
+.mouseClick {
+	background-color: #FF6600;
+	text-align: center;
+}
+
+.mybtn_hover {
+	BORDER-RIGHT: 0px;
+	BORDER-TOP: 0px;
+	BACKGROUND: url("../images/btn_bg2.gif");
+	BORDER-LEFT: 0px;
+	WIDTH: 62px;
+	CURSOR:pointer;
+	COLOR: #f00000;
+	LINE-HEIGHT: 25px;
+	BORDER-BOTTOM: 0px;
+	HEIGHT: 22px
+}
+
+.tr_bg1 {
+	background-color: #f6f3dd
+}
+
+.tr_bg2 {
+	background-color: #ffffff
+}
+
+.tr_bg3 {
+	background-color: #e0bf89
+}
+
+.tr_bg4 {
+	background-color: #efe4d0
+}
+
+.mybtn {
+	border-right: 0px;
+	border-top: 0px;
+	background: url("../images/btn_bg1.gif");
+	border-left: 0px;
+	width: auto;
+	cursor: pointer;
+	color: #15428b;
+	line-height: 22px;
+	border-bottom: 0px;
+	height: 22px
+}
+.btn {
+	padding: 2px 5px; border: currentColor; color: rgb(143, 79, 44); cursor: pointer; background-color: rgb(255, 198, 47);
+}
+.content {
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+}
+.main{
+	/* height: 500px; */
+}
+.header {
+	background-image: url(../images/blue_bridge.jpg);
+	height: 60px;
+	margin: 0 auto;
+	background-repeat: no-repeat;
+}
+
+.header .welcome {
+	float: left;
+	margin-top: 20px;
+	margin-left: 35%;
+	width: 20%;
+	height: 50%;
+}
+
+.bottom {
+	clear:both;
+	height: 100px;
+	text-align: center;
+	/*width:80%;
+	position: fixed !important;*/
+ 	bottom: 0px;
+ 	_position: absolute;
+ 	_top: expression_r(eval_r(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight));
+}
+
+.header .topnav {
+	float: left;
+	margin-top: 20px;
+}
+
+
+
+.line {
+	background-color: #CCCC00;
+	height: 1px;
+	margin: 5px;
+}
+
+.header .topnav ul {
+	list-style-image: none;
+	list-style-type: none;
+}
+
+.header .topnav li {
+	float: left;
+	margin-left: 5px;
+}
+
+div .ui-box {
+	background: rgb(255, 255, 255);
+	border: 1px solid rgb(202, 202, 202);
+	/* left: -2px;
+	top: -2px; */
+	margin: 10px 10px 10px 0px;
+	
+	/* width: 323px; 
+	position: relative;
+	*/
+	overflow: hidden;
+}
+
+/*************和分页相关的css**************/
+/*---------------------pagination-----------------------------*/   
+   
+div.pagination {    
+    padding:5px;    
+    margin:5px;    
+    text-align:center;    
+    float:right;    
+    font-size:12px;    
+}    
+   
+div.pagination a {    
+    padding: 2px 5px 2px 5px;    
+    margin-right: 2px;    
+    border: 1px solid #ddd;    
+    text-decoration: none;     
+    color: #d8325d;    
+}    
+div.pagination a:hover, div.pagination a:active {    
+    border:1px solid #ddd;    
+    color: #fff;    
+    background-color: #d8325d;    
+}    
+div.pagination span.cur_page {    
+    padding: 2px 5px 2px 5px;    
+    margin-right: 2px;    
+    border: 1px solid #ddd;    
+    font-weight: bold;    
+    background-color: #d8325d;    
+    color: #FFF;    
+}    
+div.pagination span {    
+    padding: 2px 5px 2px 5px;    
+    margin-right: 2px;    
+    border: 1px solid #ddd;    
+    text-decoration: none;     
+    color: #d8325d;    
+}   
+
+/*************和分页相关的css**************/

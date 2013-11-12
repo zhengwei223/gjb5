@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="GBK"?>
+<message>
+	<head>
+		<!-- 消息类别 -->
+		<!--userIncrSync用户增量同步 -->
+		<!--userFullSync用户全量同步 -->
+		<messageType>userIncrSync</messageType>
+	</head>
+	<body>
+		<userList>
+			<!-- 操作类型opt -->
+			<!-- AddUserExtended新增用户 -->
+			<!-- DeleteUserPermanentExtended永久删除用户 -->
+			<!-- MarkDeleteUserExtended标记删除用户 -->
+			<!-- ResumeMarkedUserExtended恢复标记删除的用户 -->
+			<!-- UpdateUserExtended更改用户 -->
+			<user opt="AddUserExtended">
+				<!--用户唯一ID -->
+				<uuid>8a918aa73d332875013d332875b50000</uuid>
+				<!--用户编号 -->
+				<code>a001</code>
+				<!--用户名 -->
+				<name>a001</name>
+				<!--密码 -->
+				<pwd>a001</pwd>
+				<!--用户姓名 -->
+				<fullname>a001a001</fullname>
+				<!--用户手机号码 -->
+				<number>100</number>
+				<!--用户所属单位 -->
+				<unit>中软国际</unit>
+				<!--邮箱地址 -->
+				<email>a001@qq.com</email>
+				<!--机构唯一ID -->
+				<orgUuid>8a918aa73d332875013d332875b50000</orgUuid>
+				<!--机构编码 -->
+				<orgCode>org001</orgCode>
+			</user>
+			<user opt="UpdateUserExtended">
+				<uuid>8a918aa73d332875013d332875b50000</uuid>
+				<code>a001</code>
+				<name>a001</name>
+				<pwd>a001</pwd>
+				<fullname>a001a001</fullname>
+				<number>100</number>
+				<unit>中软国际</unit>
+				<email>a001@qq.com</email>
+				<orgUuid>8a918aa73d332875013d332875b50000</orgUuid>
+				<orgCode>org001</orgCode>
+			</user>
+			<!--标记删除和恢复标记删除参考以下格式 -->
+			<user opt="DeleteUserPermanentExtended">
+				<uuid>8a918aa73d332875013d332875b50000</uuid>
+				<code>a001</code>
+			</user>
+			......
+		</userList>
+	</body>
+</message>

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- DBUnit flatXml DataFile -->
+<dataset>
+
+
+	  <COMMON_DICT 
+			ID='Id222' 
+			TABLE_NAME='TableName429' 
+			FIELD_NAME='FieldName713' 
+			FIELD_VALUE='892' 
+			TEXT='Text454' 
+			DESCP='Descp933' 
+	  />	
+  
+</dataset>

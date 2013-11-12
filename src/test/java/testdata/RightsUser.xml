@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- DBUnit flatXml DataFile -->
+<dataset>
+
+
+	  <RIGHTS_USER 
+			ID='Id046' 
+			USERNAME='Username403' 
+			PASSWORD='Password395' 
+			NAME='Name784' 
+			STATUS='123' 
+			DEPT_ID='DeptId763' 
+			ORG_ID='OrgId090' 
+			EMP_ID='EmpId603' 
+			PHONENUMBER='Phonenumber535' 
+			ROLE_ID='RoleId586' 
+	  />	
+  
+</dataset>

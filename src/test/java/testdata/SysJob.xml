@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- DBUnit flatXml DataFile -->
+<dataset>
+
+
+	  <SYS_JOB 
+			ID='Id494' 
+			IS_INTERNAL='6' 
+			BEGIN_TIME='2013-07-26 20:41:51.268' 
+			END_TIME='2013-07-26 20:41:51.268' 
+			EXECUTE_METHOD='3' 
+			FREQUENCY='603' 
+			PRIORITY='462' 
+			BATCH='038' 
+			URL='Url702' 
+			STATUS='040' 
+			SCALE='898' 
+			ORIGIN_TYPE_ID='OriginTypeId291' 
+			EVENT_ID='EventId348' 
+	  />	
+  
+</dataset>

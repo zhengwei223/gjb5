@@ -1,0 +1,137 @@
+/* body */
+body {
+	font-size: 12px;
+	font-family: Verdana,Arial,Helvetica,AppleGothic,sans-serif;
+	margin: 0 auto;
+	padding: 0;
+	text-align:center;
+	background: none repeat scroll 0% 0% rgb(255, 255, 255);
+}
+
+/* link color */
+a,a:link {color: #006699; text-decoration:none;}
+a:visited {color: #006699;text-decoration:none;}
+a:hover {color: #bc2931; text-decoration:underline;}
+a:active {color: #bc2931;}
+
+/* for button: <input type=submit class=stdButton /> 增删改按钮的样式都是它*/
+.stdButton {
+	background-color:buttonface;
+	border:1px solid #ddd;
+	cursor:pointer;
+	font-family:Verdana;
+	font-size:9pt;
+	height:22px;
+}
+
+/* formTable 表单表*/
+.formTable  {
+	border-collapse: collapse;
+	width:100%;
+	margin:0px; 
+}
+.formTable_x  {
+	border-collapse: collapse;
+	margin:0px; 
+}
+/* 表单表的label */
+.formTable .tdLabel {
+	border: 1px solid #ddd;
+	height: 25px;
+	width: 150px;
+	font-weight:bold;
+	vertical-align: bottom;
+	text-align: right;
+	padding-right: 2px;
+}
+/* 表单表单元格 */
+.formTable td {
+	border: 1px solid #ddd;
+	padding-left: 5px;
+	vertical-align: bottom;}
+	
+.formTable_x td {
+	border: 1px solid #ddd;
+	vertical-align: bottom;}	
+
+.formTable span.required{   
+	color:red;
+	font-weight:bold;
+}
+
+/* END formTable */
+
+/* queryPanel for list.jsp 列表页上的搜索Panel*/
+.queryPanel .tdLabel{   
+	vertical-align: bottom;
+	text-align: right;
+}
+
+/* Messages */
+
+.flash_error, .flash_success {
+    font-weight: bold;
+    background-repeat: no-repeat;
+    padding: 7px 40px;
+    margin: 0 1px;
+    
+	border: 1px solid black;
+    background-color: #ffffcc;
+    color: #000000;
+}
+
+.flash_error {
+	border: 2px solid red;
+    color: #f30;
+    background-image: url(images/icon_flash_error.gif);
+}
+
+.flash_success {
+    background-image: url(images/icon_flash_success.gif);
+}
+
+.odd {
+	/* background-color: #D9E3F4; */
+	background-color: #D9E3F4;
+}
+
+.even {
+	/* background-color: #F5F9FE; */
+	background-color: #F5F9FE;
+}
+/* END Messages */
+
+/* 可抽取出 global.css  START*/
+html,/*  body, */ div, span, object, iframe, pre, a, code, font, ul, li, img, samp, small, strong, big, form, label, table, caption, tr, td {
+    margin:0px;
+	padding:0px;
+	border:0px;
+	outline:0;
+	font-weight:inherit;
+	font-style:inherit;
+	font-size: 12px;
+	font-family: Verdana,Arial,Helvetica,AppleGothic,sans-serif;
+	text-align:left;
+	vertical-align:baseline;
+}
+li{
+	list-style: none;
+}
+/* 可抽取出 global.css  END*/
+
+//---add by zhengwei 
+.mouseOut {
+	background-color: #EBF2FC;
+	text-align: center;
+}
+
+.mouseOut1 {
+	background-color: #D9E3F4;
+	text-align: left;
+}
+
+.mouseOut0 {
+	background-color: #F5F9FE;
+	text-align: left;
+}
+
