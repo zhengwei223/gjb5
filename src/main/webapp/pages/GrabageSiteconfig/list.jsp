@@ -114,9 +114,7 @@
 					</table>
 				</fieldset>
 				<div class="handleControl">
-					<input type="submit" class="stdButton" style="width: 80px"
-						value="查询"
-						onclick="getReferenceForm(this).action='${ctx}/pages/GrabageSiteconfig/list.do'" />
+					<a href="javascript:;" class="easyui-linkbutton" iconCls="icon-search" onclick="getReferenceForm(this).action='${ctx}/pages/GrabageSiteconfig/list.do';getReferenceForm(this).submit();" >搜索</a>
 					<shiro:hasPermission name="GrabageSiteconfig:create">
 					<input type="submit" class="stdButton" style="width: 80px"
 						value="新增"

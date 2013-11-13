@@ -44,12 +44,9 @@
 			</tr>
 		</table>
 	</s:form>
-<script>
+	<script>
 		function submitForm(){
 			$('#ff').form('submit');
-		}
-		function clearForm(){
-			$('#ff').form('clear');
 		}
 	</script>
 </rapid:override>

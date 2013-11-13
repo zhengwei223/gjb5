@@ -4,13 +4,13 @@
 <rapid:override name="head">
 	<title><%=RightsMapping.TABLE_ALIAS%>新增</title>
 </rapid:override>
-
 <rapid:override name="content">
-	<s:form action="/pages/RightsMapping/save.do" method="post">
-		<input id="submitButton" name="submitButton" type="submit" value="提交" />
+	<div style="margin: 10px 5px;text-align: left">
+		<a class="easyui-linkbutton" data-options="plain:true" href="javascript:;" onclick="$('#save').submit();">提交</a>
 		<a class="easyui-linkbutton" data-options="plain:true" onclick="window.location='${ctx}/pages/RightsMapping/list.do'" >返回列表</a>
 		<a class="easyui-linkbutton" data-options="plain:true" onclick="history.back();" >后退</a>
-		
+	</div>
+	<s:form action="/pages/RightsMapping/save.do" method="post">
 		<table class="formTable">
 		<%@ include file="form_include.jsp" %>
 		</table>

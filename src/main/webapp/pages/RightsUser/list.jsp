@@ -57,7 +57,7 @@
 		<div class="handleControl">
 			<input type="submit" class="stdButton" style="width:80px" value="查询" onclick="getReferenceForm(this).action='${ctx}/pages/RightsUser/list.do'"/>
 			<shiro:hasPermission name="RightsUser:create">
-			<input type="submit" class="stdButton" style="width:80px" value="新增" onclick="getReferenceForm(this).action='${ctx}/pages/RightsUser/create.do'"/>
+			<a href="javascript:;" class="easyui-linkbutton" iconCls="icon-add" onclick="getReferenceForm(this).action='${ctx}/pages/RightsUser/create.do';getReferenceForm(this).submit();" >新增</a>
 			</shiro:hasPermission>
 			<shiro:hasPermission name="RightsUser:delete">
 			<input type="button" class="stdButton" style="width:80px" value="禁用" onclick="batchOp('${ctx}/pages/RightsUser/delete.do','items',document.forms.queryForm)"/>

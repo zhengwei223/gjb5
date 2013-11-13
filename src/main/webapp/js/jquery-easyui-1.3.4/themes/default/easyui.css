@@ -818,7 +818,8 @@ a.l-btn {
 }
 a.l-btn-plain {
   padding-right: 5px;
-  border: 0;
+  /* border: 0; */
+  border: 1px solid #FFF8DC; /*超链接按钮的边线*/
   padding: 1px 6px 1px 1px;
 }
 a.l-btn-disabled {
@@ -896,7 +897,7 @@ a.l-btn span.l-btn-left {
 a.l-btn-plain,
 a.l-btn-plain span.l-btn-left {
   background: transparent;
-  border: 0;
+  /* border: 0; */
   filter: none;
 }
 a:hover.l-btn-plain {

@@ -29,7 +29,7 @@
 		
 	</script> --%>
 </rapid:override>
-
+	
 <rapid:override name="content">
 <div style="width: 50%;float: left">
 	<s:form action="/pages/RightsRole/save.do" method="post">
@@ -39,7 +39,7 @@
 			<tr>
 			<td></td>
 			<td>
-				<input id="submitButton" name="submitButton" type="submit" value="提交" />
+				<a class="easyui-linkbutton" data-options="plain:true" href="javascript:;" onclick="$('#save').submit();">提交</a>
 				<a class="easyui-linkbutton" data-options="plain:true" onclick="window.location='${ctx}/pages/RightsRole/list.do'" >返回列表</a>
 				<a class="easyui-linkbutton" data-options="plain:true" onclick="history.back();" >后退</a>
 			</td>

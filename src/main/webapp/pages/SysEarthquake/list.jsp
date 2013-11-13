@@ -74,10 +74,10 @@
 		<div class="handleControl">
 			<input type="submit" class="stdButton" style="width:80px" value="查询" onclick="getReferenceForm(this).action='${ctx}/pages/SysEarthquake/list.do'"/>
 			<shiro:hasPermission name="SysEarthquake:create">
-			<input type="submit" class="stdButton" style="width:80px" value="新增" onclick="getReferenceForm(this).action='${ctx}/pages/SysEarthquake/create.do'"/>
+			<a href="javascript:;" class="easyui-linkbutton" iconCls="icon-add" onclick="getReferenceForm(this).action='${ctx}/pages/SysEarthquake/create.do';getReferenceForm(this).submit();" >新增</a>
 			</shiro:hasPermission>
 			<shiro:hasPermission name="SysEarthquake:delete">
-			<input type="button" class="stdButton" style="width:80px" value="删除" onclick="batchDelete('${ctx}/pages/SysEarthquake/delete.do','items',document.forms.queryForm)"/>
+			<a href="javascript:;" class="easyui-linkbutton" iconCls="icon-remove" onclick="batchDelete('${ctx}/pages/SysEarthquake/delete.do','items',document.forms.queryForm);" >删除</a>
 			</shiro:hasPermission>
 		</div>
 	</div>

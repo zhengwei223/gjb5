@@ -96,10 +96,10 @@
 		<div class="handleControl">
 			<input type="submit" class="stdButton" style="width:80px" value="查询" onclick="getReferenceForm(this).action='${ctx}/pages/DataIdentify/list.do'"/>
 			<shiro:hasPermission name="DataIdentify:create">
-			<input type="submit" class="stdButton" style="width:80px" value="新增" onclick="getReferenceForm(this).action='${ctx}/pages/DataIdentify/create.do'"/>
+			<a href="javascript:;" class="easyui-linkbutton" iconCls="icon-add" onclick="getReferenceForm(this).action='${ctx}/pages/DataIdentify/create.do';getReferenceForm(this).submit();" >新增</a>
 			</shiro:hasPermission>
 			<shiro:hasPermission name="DataIdentify:delete">
-			<input type="button" class="stdButton" style="width:80px" value="删除" onclick="batchDelete('${ctx}/pages/DataIdentify/delete.do','items',document.forms.queryForm)"/>
+			<a href="javascript:;" class="easyui-linkbutton" iconCls="icon-remove" onclick="batchDelete('${ctx}/pages/DataIdentify/delete.do','items',document.forms.queryForm);" >删除</a>
 			</shiro:hasPermission>
 		</div>
 	</div>

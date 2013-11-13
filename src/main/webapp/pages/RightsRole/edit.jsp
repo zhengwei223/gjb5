@@ -40,7 +40,7 @@
 		<tr>
 			<td></td>
 			<td>
-				<input id="submitButton" name="submitButton" type="submit" value="提交" />
+				<a class="easyui-linkbutton" data-options="plain:true" onclick="$('#update').submit()" >提交</a>
 				<a class="easyui-linkbutton" data-options="plain:true" onclick="window.location='${ctx}/pages/RightsRole/list.do'" >返回列表</a>
 				<a class="easyui-linkbutton" data-options="plain:true" onclick="history.back();" >后退</a>
 			</td>

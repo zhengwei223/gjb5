@@ -1,4 +1,4 @@
-package com.bm.gjb5.action;
+package com.bm.gjb5.action.wstest;
 
 import javacommon.base.BaseStruts2Action;
 import cn.org.rapid_framework.web.scope.Flash;

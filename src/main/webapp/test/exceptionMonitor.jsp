@@ -1,5 +1,4 @@
-<%@ page language="java" 
-	pageEncoding="UTF-8"%>
+<%@ page language="java" pageEncoding="UTF-8"%>
 <%@ include file="/commons/taglibs.jsp"%>
 <%
 	String path = request.getContextPath();
@@ -34,8 +33,8 @@ $(document).ready(function(){
 <body>
 	<%@ include file="/commons/messages.jsp"%>
 	<h3>发送应用异常</h3>
-	将wsdl路径配置在码表中
-	<s:form action="AppException/send.do" namespace="/pages">
+	将wsdl路径配置在码表中,webService-->exceptionMonitor
+	<s:form action="AppException/send.do" namespace="/wstest">
 		<%-- <s:select label="事件" name="eventId" list="events" listKey="eventId" listValue="eventId"></s:select> --%>
 		<!-- <tr>
 			<td class="tdLabel"><label for="eventId" class="label" >地震序列:</label></td>

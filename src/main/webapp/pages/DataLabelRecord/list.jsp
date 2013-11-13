@@ -44,10 +44,10 @@
 		<div class="handleControl">
 			<input type="submit" class="stdButton" style="width:80px" value="查询" onclick="getReferenceForm(this).action='${ctx}/pages/DataLabelRecord/list.do'"/>
 			<shiro:hasPermission name="DataLabelRecord:create">
-			<input type="submit" class="stdButton" style="width:80px" value="新增" onclick="getReferenceForm(this).action='${ctx}/pages/DataLabelRecord/create.do'"/>
+			<a href="javascript:;" class="easyui-linkbutton" iconCls="icon-add" onclick="getReferenceForm(this).action='${ctx}/pages/DataLabelRecord/create.do';getReferenceForm(this).submit();" >新增</a>
 			</shiro:hasPermission>
 			<shiro:hasPermission name="DataLabelRecord:delete">
-			<input type="button" class="stdButton" style="width:80px" value="删除" onclick="batchDelete('${ctx}/pages/DataLabelRecord/delete.do','items',document.forms.queryForm)"/>
+			<a href="javascript:;" class="easyui-linkbutton" iconCls="icon-remove" onclick="batchDelete('${ctx}/pages/DataLabelRecord/delete.do','items',document.forms.queryForm);" >删除</a>
 			</shiro:hasPermission>
 		</div>
 	</div>

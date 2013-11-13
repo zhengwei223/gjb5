@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InterfaceFile>
+	<FileHeader>
+		<MessageType>MsgReport</MessageType>
+		<Originator>B5</Originator>
+		<Recipient>B7</Recipient>
+		<CreationTime>2013-06-18 14:54:00</CreationTime>
+		<Landing>LANDING</Landing>
+	</FileHeader>
+	
+	<FileBody name="appMonitor">
+		<system>1</system>
+		<reportTime>1970</reportTime>
+		<runStatus>0</runStatus>
+	</FileBody>
+	
+</InterfaceFile>

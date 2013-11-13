@@ -16,12 +16,12 @@ public class CooperationControlServiceImpl implements CooperationControlService 
 		LogBusiUtils.log("收到协同控制命令#"+order+"#"+getOrderString(order),DbOpType.UPDATE);
 		return "1";
 	}
-	@Override
+	/*@Override
 	public String appMonitor(String sysytem, long reportTime, String runStaus) {
 		logger.info("收到协同应用监视信息#"+sysytem+"#"+reportTime+"#"+runStaus);
 		LogBusiUtils.log("收到协同应用监视信息#"+sysytem+"#"+reportTime+"#"+runStaus,DbOpType.UPDATE);
 		return "1";
-	}
+	}*/
 	private String getOrderString(int order) {
 		return AppProperties.getOrders().get(order);
 	}

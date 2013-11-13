@@ -37,8 +37,8 @@ public class SysOriginTypeDao extends BaseHibernateDao<SysOriginType,java.lang.S
         // [column]为字符串拼接, {column}为使用占位符. [column]为使用字符串拼接,如username='[username]',偷懒时可以使用字符串拼接 
         // [column] 为PageRequest的属性
 		String sql = "select t from SysOriginType t where 1=1 "
-			  	+ "/~ and t.name = {name} ~/"
-			  	+ "/~ and t.descp = {descp} ~/"
+			  	+ "/~ and t.name like '%[name]%' ~/"
+			  	+ "/~ and t.descp like '%[descp]%' ~/"
 				+ "/~ order by [sortColumns] ~/";
 
         

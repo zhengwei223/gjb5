@@ -18,41 +18,18 @@ public interface EmergencyService {
 	/**
 	 * 启动应急响应
 	 * 
-	 * @param eventId
-	 *            事件id
-	 * @param eventTime
-	 *            发生时间
-	 * @param location
-	 *            地名
-	 * @param longitude
-	 *            经度
-	 * @param latitude
-	 *            纬度
-	 * @param magnitude
-	 *            震级
-	 * @param depth
-	 *            震源深度
+
 	 * @return 返回状态码： 0：失败 1：成功
+	 * @throws Exception 
 	 */
 	@WebResult(name = "Status")
-	String emergencyStart(@WebParam(name = "eventId") String eventId,
-			@WebParam(name = "eventTime") Long eventTime,
-			@WebParam(name = "location") String location,
-			@WebParam(name = "longitude") String longitude,
-			@WebParam(name = "latitude") String latitude,
-			@WebParam(name = "magnitude") String magnitude,
-			@WebParam(name = "depth") String depth);
+	String emergencyStart(@WebParam(name = "xmlFile") String xmlFile) throws Exception;
 
 	/**
 	 * 结束应急响应
 	 * 
-	 * @param eventId
-	 *            地震序列
-	 * @param endTime
-	 *            结束时间
 	 * @return 返回状态码： 0：失败 1：成功
 	 */
 	@WebResult(name = "Status")
-	String emergencyStop(@WebParam(name = "eventId") String eventId,
-			@WebParam(name = "endTime") Long endTime);
+	String emergencyStop(@WebParam(name = "xmlFile") String xmlFile);
 }

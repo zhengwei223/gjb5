@@ -818,7 +818,7 @@ a.l-btn {
 }
 a.l-btn-plain {
   padding-right: 5px;
-  border: 0;
+  /* border: 0; */
   padding: 1px 6px 1px 1px;
 }
 a.l-btn-disabled {
@@ -912,7 +912,7 @@ a:hover.l-btn {
 a.l-btn-plain,
 a.l-btn-plain span.l-btn-left {
   background: transparent;
-  border: 0;
+ /*  border: 0; */
   filter: none;
 }
 a:hover.l-btn-plain {

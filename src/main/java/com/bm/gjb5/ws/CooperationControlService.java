@@ -42,9 +42,9 @@ public interface CooperationControlService {
 	 * @param runStaus
 	 *            运行状态
 	 * @return 返回状态码： 0：失败 1：成功
-	 */
+	 *//*
 	@WebResult(name = "Status")
 	String appMonitor(@WebParam(name = "sysytem") String sysytem,
 			@WebParam(name = "reportTime") long reportTime,
-			@WebParam(name = "runStaus") String runStaus);
+			@WebParam(name = "runStaus") String runStaus);*/
 }

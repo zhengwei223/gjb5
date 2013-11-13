@@ -101,7 +101,7 @@ public class AppProperties {
 		try {
 			return appProperties.getProperty("appName");
 		} catch (Exception e) {
-			return "GJB5";
+			return "B5";
 		}
 	}
 	private static Map<Integer, String> orders = new HashMap<Integer, String>();

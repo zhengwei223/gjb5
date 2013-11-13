@@ -157,19 +157,23 @@
 					data-options="menu:'#mm_4'">调试</a>
 				</p>
 				<div id="mm_4" style="width:150px;">
-					<div><a href="javascript:void(0);" src="${ctx }/pages/ControlFeedback/toFeedBack.do"
+					<div><a href="javascript:void(0);" src="${ctx }/wstest/ControlFeedback/toFeedBack.do"
 					class="cs-navi-tab">协同控制反馈调试</a></div>
-					<div><a href="javascript:void(0);" src="${ctx }/test/sendAppRecord.jsp"
-					class="cs-navi-tab">发送应用消息</a></div>
-					<div><a href="javascript:void(0);" src="${ctx }/test/sendException.jsp"
-					class="cs-navi-tab">发送异常消息</a></div>
-					
+					<div><a href="javascript:void(0);" src="${ctx }/test/appRecord.jsp"
+					class="cs-navi-tab">应用日志接口调试</a></div>
+					<div><a href="javascript:void(0);" src="${ctx }/test/exceptionMonitor.jsp"
+					class="cs-navi-tab">异常监控接口调试</a></div>
+					<div><a href="javascript:void(0);" src="${ctx }/test/appMonitor.jsp"
+					class="cs-navi-tab">应用监控接口调试</a></div>
 					
 				</div>
 			</div>
 			<div title="数据管理">
+				<a href="javascript:void(0);" src="${ctx }/pages/SysOriginType/list.do"
+					class="cs-navi-tab">数据来源分类</a>
+				</p>	
 				<a href="javascript:void(0);" src="${ctx }/pages/SysJob/list.do"
-					class="cs-navi-tab">数据来源配置</a>
+					class="cs-navi-tab">数据采集配置</a>
 				</p>
 				<a href="javascript:void(0);" src="${ctx }/pages/GrabageSiteconfig/list.do"
 					class="cs-navi-tab">网络媒体数据采集配置</a>

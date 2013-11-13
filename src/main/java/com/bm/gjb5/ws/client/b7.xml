@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InterfaceFile>
+	<FileHeader>
+		<MessageType>MsgReport</MessageType>
+		<Originator>B5</Originator>
+		<Recipient>B7</Recipient>
+		<CreationTime>2013-06-18 14:54:00</CreationTime>
+		<Landing>LANDING</Landing>
+	</FileHeader>
+	<FileBody name="controlFeedback">
+		<eventId>00001010</eventId>
+		<system>1</system>
+		<order>1</order>
+		<performance>1</performance>
+		<failuneReasons></failuneReasons>
+	</FileBody>
+	<!-- <FileBody name="excepitonMonitor">
+		<system>1</system>
+		<reportTime>1970</reportTime>
+		<exceptionLevel>1</exceptionLevel>
+		<exceptionMessage></exceptionMessage>
+	</FileBody>
+	<FileBody name="appMonitor">
+		<system>1</system>
+		<reportTime>1970</reportTime>
+		<runStatus>0</runStatus>
+	</FileBody>
+	<FileBody name="appRecord">
+		<system>1</system>
+		<reportTime>1970</reportTime>
+		<logTitle></logTitle>
+		<logMessage>1</logMessage>
+		<eventId>00001010</eventId>
+	</FileBody> -->
+</InterfaceFile>

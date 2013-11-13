@@ -81,9 +81,7 @@
 				</table>
 			</fieldset>
 			<div class="handleControl">
-				<input type="submit" class="stdButton" style="width: 80px"
-					value="查询"
-					onclick="getReferenceForm(this).action='${ctx}/pages/Userinfo/list.do'" />
+				<a href="javascript:;" class="easyui-linkbutton" iconCls="icon-search" onclick="getReferenceForm(this).action='${ctx}/pages/Userinfo/list.do';getReferenceForm(this).submit();" >搜索</a>
 				<shiro:hasPermission name="Userinfo:sync">
 				<input type="submit" class="stdButton" style="width: 80px"
 					value="手动同步"
@@ -93,7 +91,7 @@
 				<input type="button" class="stdButton" style="width: 80px"
 					value="激活并授权" onclick="showOverlay()" />
 				</shiro:hasPermission>
-				<%-- <input type="button" class="stdButton" style="width:80px" value="删除" onclick="batchDelete('${ctx}/pages/Userinfo/delete.do','items',document.forms.queryForm)"/> --%>
+				<%-- <a href="javascript:;" class="easyui-linkbutton" iconCls="icon-remove" onclick="batchDelete('${ctx}/pages/Userinfo/delete.do','items',document.forms.queryForm);" >删除</a> --%>
 			</div>
 		</div>
 		<div class="gridTable">

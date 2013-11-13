@@ -44,5 +44,10 @@
 		    <result name="*" type="direct">通过Action直接返回，这一行无需修改</result>
 		</action>
     </package>
-    
+    <package name="wstest" namespace="/wstest" extends="custom-default">
+		
+		<action name="*/*" method="{2}" class="com.bm.gjb5.action.wstest.{1}Action">
+		    <result name="*" type="direct">通过Action直接返回，这一行无需修改</result>
+		</action>
+    </package>
 </struts>

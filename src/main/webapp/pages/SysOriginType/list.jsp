@@ -31,22 +31,18 @@
 					<tr>
 						<td class="tdLabel"><%=SysOriginType.ALIAS_NAME%></td>
 						<td><input value="${query.name}" id="name" name="name"
-							maxlength="20" class="" /></td>
-						<td class="tdLabel"><%=SysOriginType.ALIAS_DESCP%></td>
-						<td><input value="${query.descp}" id="descp" name="descp"
-							maxlength="200" class="" /></td>
+							maxlength="20" class="" />
+					<a href="javascript:;" class="easyui-linkbutton" iconCls="icon-search" onclick="getReferenceForm(this).action='${ctx}/pages/SysOriginType/list.do';getReferenceForm(this).submit();" >搜索</a>
+							</td>
 					</tr>
 				</table>
 			</fieldset>
 			<div class="handleControl">
-				<input type="submit" class="stdButton" style="width: 80px"
-					value="查询"
-					onclick="getReferenceForm(this).action='${ctx}/pages/SysOriginType/list.do'" />
 				<shiro:hasPermission name="SysOriginType:create">
-				<input type="submit" class="stdButton" style="width:80px" value="新增" onclick="getReferenceForm(this).action='${ctx}/pages/SysOriginType/create.do'"/>
+				<a href="javascript:;" class="easyui-linkbutton" iconCls="icon-add" onclick="getReferenceForm(this).action='${ctx}/pages/SysOriginType/create.do';getReferenceForm(this).submit();" >新增</a>
 				</shiro:hasPermission>
 				<shiro:hasPermission name="SysOriginType:delete">
-				<input type="button" class="stdButton" style="width:80px" value="删除" onclick="batchDelete('${ctx}/pages/SysOriginType/delete.do','items',document.forms.queryForm)"/>
+				<a href="javascript:;" class="easyui-linkbutton" iconCls="icon-remove" onclick="batchDelete('${ctx}/pages/SysOriginType/delete.do','items',document.forms.queryForm);" >删除</a>
 				</shiro:hasPermission>
 			</div>
 		</div>
@@ -79,9 +75,9 @@
 							<td><s:property value='#item.name' />&nbsp;</td>
 							<td><s:property value='#item.descp' />&nbsp;</td>
 							<td>
-								<a href="${ctx}/pages/SysOriginType/show.do?id=<s:property value='#item.id'/>&">查看</a>&nbsp;&nbsp;&nbsp;
+								<a href="${ctx}/pages/SysOriginType/show.do?id=<s:property value='#item.id'/>&" class="easyui-linkbutton" data-options="plain:true">查看</a>&nbsp;&nbsp;&nbsp;
 								<shiro:hasPermission name="SysOriginType:edit">
-								<a href="${ctx}/pages/SysOriginType/edit.do?id=<s:property value='#item.id'/>&">修改</a>
+								<a href="${ctx}/pages/SysOriginType/edit.do?id=<s:property value='#item.id'/>&" class="easyui-linkbutton" data-options="plain:true">修改</a>
 								</shiro:hasPermission>
 							</td>
 						</tr>

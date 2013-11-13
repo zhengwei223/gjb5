@@ -45,7 +45,9 @@
 			<div id="u22_img">
 				<img class="raw_image" src="${ctx }/images/u22_normal.jpg" />
 			</div>
-			<div  class="easyui-panel"  style="width:400px;margin: 50px 0 0 50px;" >
+			<div class="panel" style="width:400px;margin: 50px 0 0 50px;">
+			
+			<div  class="easyui-panel"   >
 				<%
 					Object obj = request
 							.getAttribute(FormAuthenticationFilter.DEFAULT_ERROR_KEY_ATTRIBUTE_NAME);
@@ -59,7 +61,7 @@
 
 					out.println("<div class='error'>" + msg + "</div>");
 				%>
-				<form action="login.jsp" method="post">
+				<form action="login.jsp" method="post" id="ff">
 					<input type="hidden" name="rememberMe" value="true" /> <br />
 					<table>
 
@@ -85,12 +87,13 @@
 						</tr> -->
 						<tr>
 							<td></td>
-							<td><input value="登录" type="submit" class="easyui-linkbutton">&nbsp;&nbsp;&nbsp;&nbsp;
-							<input value="重置" type="reset" class="easyui-linkbutton"></td>
+							<td><a class="easyui-linkbutton" onclick="$('#ff').submit();">登录</a>&nbsp;&nbsp;&nbsp;&nbsp;
+							<a class="easyui-linkbutton" onclick="$('#ff').reset();">重置</a></td>
 						</tr>
 					</table>
 
 				</form>
+			</div>
 			</div>
 		</div>
 

@@ -11,7 +11,7 @@
 <html>
 <head>
 <%@ include file="/commons/meta.jsp"%>
-<title>发送应用消息调试页面</title>
+<title>应用日志调试页面</title>
 <script type="text/javascript">
 $(document).ready(function(){
 	$("#eventId").combogrid({
@@ -33,9 +33,9 @@ $(document).ready(function(){
 </head>
 <body>
 	<%@ include file="/commons/messages.jsp"%>
-	<h3>发送应用记录</h3>
-	将wsdl路径配置在码表中
-	<s:form action="AppRecord/send.do" namespace="/pages">
+	<h3>发送应用日志</h3>
+	将wsdl路径配置在码表中，webService-->appRecord 
+	<s:form action="AppRecord/send.do" namespace="/wstest">
 		<%-- <s:select label="事件" name="eventId" list="events" listKey="eventId" listValue="eventId"></s:select> --%>
 		<tr>
 			<td class="tdLabel"><label for="eventId" class="label" >地震序列:</label></td>
