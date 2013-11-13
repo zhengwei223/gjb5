@@ -13,8 +13,8 @@
 		<%@ include file="form_include.jsp" %>
 		</table>
 		<input id="submitButton" name="submitButton" type="submit" value="提交" />
-		<input type="button" value="返回列表" onclick="window.location='${ctx}/pages/DataIdentify/list.do'"/>
-		<input type="button" value="后退" onclick="history.back();"/>
+		<a class="easyui-linkbutton" data-options="plain:true" onclick="window.location='${ctx}/pages/DataIdentify/list.do'" >返回列表</a>
+		<a class="easyui-linkbutton" data-options="plain:true" onclick="history.back();" >后退</a>
 	</s:form>
 	
 </rapid:override>

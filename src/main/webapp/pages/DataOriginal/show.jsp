@@ -7,7 +7,7 @@
 	<script type="text/javascript">
 		var play=function(_id){
 			$("#mediaDiv").window('open');
-			$("#mediaPlay").load('pages/DataOriginal/play.do',{id:_id,t:new Date()});
+			//$("#mediaPlay").load('pages/DataOriginal/play.do',{id:_id,t:new Date()});
 		};
 		$(function(){
 			$("#mediaDiv").window({
@@ -34,19 +34,21 @@
 </rapid:override>
 
 <rapid:override name="content">
-<div class="form">
+<div class="form" style="margin: 10px 0;">
 
 	<s:form action="/pages/DataOriginal/list.do" method="get"
 		theme="simple">
-		<input type="button" value="返回列表"
-			onclick="window.location='${ctx}/pages/DataOriginal/list.do'" />
-		<input type="button" value="后退" onclick="history.back();" />
+		<a href="javascript:;" class="easyui-linkbutton" data-options="plain:true"
+			onclick="window.location='${ctx}/pages/DataOriginal/list.do'" >返回列表</a>
+		<a href="javascript:;" class="easyui-linkbutton" data-options="plain:true" onclick="history.back();" >返回</a>
 		<hr>
+		
 		<s:hidden name="id" id="id" value="id" />
 		<s:url value='/pages/DataOriginal/play.do' var="playUrl"
 			includeContext="false">
 			<s:param name="id" value="%{id}"></s:param>
 		</s:url>
+		
 		<table class="formTable">
 			<tr>
 				<td class="tdLabel">灾情名称</td>
@@ -56,7 +58,7 @@
 				<td class="tdLabel">灾情文件</td>
 				<td>
 					${filename}&nbsp; 
-					<a href="javascript:;" class="easyui-linkbutton" onclick="play('${id}')">查看/播放</a>
+					<a href="pages/DataOriginal/play.do?id=${id}" class="easyui-linkbutton" target="_blank">查看/播放</a>
 					<%-- <s:if test="exists">
 					</s:if>
 					<s:else>
@@ -99,6 +101,7 @@
 <div id="mediaDiv" class="easyui-window" >
 	<div id="mediaPlay"></div>
 </div>
+
 </rapid:override>
 
 <%-- jsp模板继承,具体使用请查看: http://code.google.com/p/rapid-framework/wiki/rapid_jsp_extends --%>

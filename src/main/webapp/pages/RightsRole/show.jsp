@@ -48,8 +48,8 @@
 <rapid:override name="content">
 <div style="width: 50%;float: left">
 	<s:form action="/pages/RightsRole/list.do" method="get" theme="simple">
-		<input type="button" value="返回列表" onclick="window.location='${ctx}/pages/RightsRole/list.do'"/>
-		<input type="button" value="后退" onclick="history.back();"/>
+		<a class="easyui-linkbutton" data-options="plain:true" onclick="window.location='${ctx}/pages/RightsRole/list.do'" >返回列表</a>
+		<a class="easyui-linkbutton" data-options="plain:true" onclick="history.back();" >后退</a>
 		
 		<s:hidden name="id" id="id" value="%{model.id}"/>
 	

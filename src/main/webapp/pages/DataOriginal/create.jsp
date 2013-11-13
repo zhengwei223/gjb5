@@ -8,7 +8,7 @@
 <rapid:override name="content">
 	<h3>灾情录入</h3>
 	
-	<s:form action="/pages/DataOriginal/save.do" method="post" enctype="multipart/form-data">
+	<s:form id="ff" action="/pages/DataOriginal/save.do" method="post" enctype="multipart/form-data">
 
 		<table class="formTable">
 			<tr>
@@ -37,15 +37,21 @@
 			<tr>
 				<td></td>
 				<td>
-				<input id="submitButton" name="submitButton" type="submit" value="提交" />
-				<input type="button" value="返回列表"
-					onclick="window.location='${ctx}/pages/DataOriginal/list.do'" />
-				<input type="button" value="后退" onclick="history.back();" />
+				<a href="javascript:void(0)" data-options="plain:true" class="easyui-linkbutton" onclick="submitForm()">提交</a>
+				<a href="javascript:void(0)" class="easyui-linkbutton" data-options="plain:true" onclick="window.location='${ctx}/pages/DataOriginal/list.do'" >返回列表</a>
+				<a href="javascript:void(0)" class="easyui-linkbutton" data-options="plain:true" onclick="history.back();" >后退</a>
 				</td>
 			</tr>
 		</table>
 	</s:form>
-
+<script>
+		function submitForm(){
+			$('#ff').form('submit');
+		}
+		function clearForm(){
+			$('#ff').form('clear');
+		}
+	</script>
 </rapid:override>
 
 <%@ include file="base.jsp"%>

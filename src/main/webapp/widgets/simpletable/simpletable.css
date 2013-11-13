@@ -6,6 +6,7 @@
 
 /** grid body */
 .gridBody {
+	margin: 10px 0;
 	border-right: 1px solid silver;
 	border-top: 1px solid silver;
 }
@@ -13,7 +14,7 @@
 	border-left: 1px solid silver;
 	border-bottom: 1px solid silver;
 	vertical-align: middle;
-	background-color: #E5E5E5;
+	background-color: #FFE1FF;
 	padding:0 10px 0 0;
 }
 .gridBody td {

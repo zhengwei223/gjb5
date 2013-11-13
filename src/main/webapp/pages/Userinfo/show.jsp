@@ -8,8 +8,8 @@
 
 <rapid:override name="content">
 	<s:form action="/pages/Userinfo/list.do" method="get" theme="simple">
-		<input type="button" value="返回列表" onclick="window.location='${ctx}/pages/Userinfo/list.do'"/>
-		<input type="button" value="后退" onclick="history.back();"/>
+		<a class="easyui-linkbutton" data-options="plain:true" onclick="window.location='${ctx}/pages/Userinfo/list.do'" >返回列表</a>
+		<a class="easyui-linkbutton" data-options="plain:true" onclick="history.back();" >后退</a>
 		
 		<s:hidden name="uuid" id="uuid" value="%{model.uuid}"/>
 	

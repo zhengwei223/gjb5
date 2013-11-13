@@ -8,8 +8,8 @@
 
 <rapid:override name="content">
 	<s:form action="/pages/CommonDict/list.do" method="get" theme="simple">
-		<input type="button" value="返回列表" onclick="window.location='${ctx}/pages/CommonDict/list.do'"/>
-		<input type="button" value="后退" onclick="history.back();"/>
+		<a onclick="window.location='${ctx}/pages/CommonDict/list.do'" class="easyui-linkbutton" data-options="plain:true">返回列表</a>
+		<a onclick="history.back();" class="easyui-linkbutton" data-options="plain:true">后退</a>
 		
 		<s:hidden name="id" id="id" value="%{model.id}"/>
 	

@@ -91,9 +91,9 @@
 				<td><c:out value='${item.text}'/>&nbsp;</td>
 				<td><c:out value='${item.descp}'/>&nbsp;</td>
 				<td>
-					<a href="${ctx}/pages/CommonDict/show.do?id=${item.id}&">查看</a>&nbsp;&nbsp;&nbsp;
+					<a class="easyui-linkbutton" data-options="plain:true"" href="${ctx}/pages/CommonDict/show.do?id=${item.id}&">查看</a>&nbsp;&nbsp;&nbsp;
 					<shiro:hasPermission name="CommonDict:edit">
-						<a href="${ctx}/pages/CommonDict/edit.do?id=${item.id}&">修改</a>
+						<a class="easyui-linkbutton" data-options="plain:true" href="${ctx}/pages/CommonDict/edit.do?id=${item.id}&">修改</a>
 					</shiro:hasPermission>
 				</td>
 			  </tr>

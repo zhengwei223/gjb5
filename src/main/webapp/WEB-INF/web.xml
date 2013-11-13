@@ -37,6 +37,9 @@
   <listener>
     <listener-class>org.springframework.web.util.IntrospectorCleanupListener</listener-class>
   </listener>
+  <listener>
+    <listener-class>com.bm.gjb5.system.ContextListener</listener-class>
+  </listener>
   <filter>
     <filter-name>openSessionInViewFilter</filter-name>
     <filter-class>javacommon.filter.OpenSessionInViewFilter</filter-class>
@@ -125,7 +128,5 @@
     <servlet-name>CXFService</servlet-name>
     <url-pattern>/ws/*</url-pattern>
   </servlet-mapping>
-  <listener>
-    <listener-class>com.bm.gjb5.system.ContextListener</listener-class>
-  </listener>
+  
 </web-app>

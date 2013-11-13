@@ -28,13 +28,13 @@ a:active {color: #bc2931;}
 .formTable  {
 	border-collapse: collapse;
 	width:100%;
-	margin:0px; 
+	margin:10px 0px; 
 }
 .formTable_x  {
 	border-collapse: collapse;
 	margin:0px; 
 }
-/* 表单表的label */
+/* 表单表的label,左边列 */
 .formTable .tdLabel {
 	border: 1px solid #ddd;
 	height: 25px;
@@ -42,7 +42,7 @@ a:active {color: #bc2931;}
 	font-weight:bold;
 	vertical-align: bottom;
 	text-align: right;
-	padding-right: 2px;
+	padding-right: 5px;
 }
 /* 表单表单元格 */
 .formTable td {
@@ -62,6 +62,12 @@ a:active {color: #bc2931;}
 /* END formTable */
 
 /* queryPanel for list.jsp 列表页上的搜索Panel*/
+.queryPanel{
+	margin: 10px 0;
+}
+.handleControl{
+	margin-top: 10px;
+}
 .queryPanel .tdLabel{   
 	vertical-align: bottom;
 	text-align: right;
