@@ -23,7 +23,7 @@ import com.bm.gjb5.model.Userinfo;
 import com.bm.gjb5.system.LogBusiUtils;
 import com.bm.gjb5.system.LogBusiUtils.DbOpType;
 import com.bm.gjb5.vo.query.UserinfoQuery;
-import com.bm.gjb5.ws.SyncUtil;
+import com.bm.gjb5.ws.client.SyncUtil;
 
 @Service
 public class UserinfoManager extends BaseManager<Userinfo, java.lang.String> {

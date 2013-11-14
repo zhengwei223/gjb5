@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InterfaceFile>
+	<FileHeader>
+		<MessageType>MsgReport</MessageType>
+		<Originator>B5</Originator>
+		<Recipient>B7</Recipient>
+		<CreationTime>2013-06-18 10:46:02</CreationTime>
+		<Landing>LANDING</Landing>
+	</FileHeader>
+	<FileBody>
+		<appId>app001</appId>
+		<synType>1</synType>
+	</FileBody>
+</InterfaceFile>

@@ -76,51 +76,40 @@
 			</div>
 		</div>
 
-		<div >
-			<div style="float: left" >
-				<s:a action="Earthquake/toSelect" namespace="/pages"
-					cssClass="easyui-linkbutton" data-options="plain:true">首页</s:a>
-					
-				<a href="${ctx }/left1.jsp" target="leftFrame" onclick="show(1)"
-					class="easyui-linkbutton" data-options="plain:true">灾情信息汇集</a>
-					
+		<div>
+			<div style="float: left">
+				<s:a action="Earthquake/toSelect" namespace="/pages" cssClass="easyui-linkbutton" data-options="plain:true">首页</s:a>
+
+				<a href="${ctx }/left1.jsp" target="leftFrame" onclick="show(1)" class="easyui-linkbutton" data-options="plain:true">灾情信息汇集</a>
+
 				<shiro:hasAnyRoles name="系统管理员,系统操作员">
-					<a href="${ctx }/left2.jsp" target="leftFrame" onclick="show(2)"
-						class="easyui-linkbutton" data-options="plain:true">灾情信息处理</a>
+					<a href="${ctx }/left2.jsp" target="leftFrame" onclick="show(2)" class="easyui-linkbutton" data-options="plain:true">灾情信息处理</a>
 				</shiro:hasAnyRoles>
-				<a href="${ctx }/left3.jsp" target="leftFrame" onclick="show(3)"
-					class="easyui-linkbutton" data-options="plain:true">灾情信息呈现</a>
+				<a href="${ctx }/left3.jsp" target="leftFrame" onclick="show(3)" class="easyui-linkbutton" data-options="plain:true">灾情信息呈现</a>
 				<shiro:hasAnyRoles name="系统管理员,系统操作员">
-					<a href="${ctx }/left4.jsp" target="leftFrame" onclick="show(4)"
-						class="easyui-linkbutton" data-options="plain:true">系统管理</a>
+					<a href="${ctx }/left4.jsp" target="leftFrame" onclick="show(4)" class="easyui-linkbutton" data-options="plain:true">系统管理</a>
 				</shiro:hasAnyRoles>
 				<shiro:hasAnyRoles name="系统管理员,系统操作员">
-					<a href="${ctx }/left4.jsp" target="leftFrame" onclick="show(4)"
-						class="easyui-linkbutton" data-options="plain:true">灾情数据管理</a>
+					<a href="${ctx }/left4.jsp" target="leftFrame" onclick="show(4)" class="easyui-linkbutton" data-options="plain:true">灾情数据管理</a>
 				</shiro:hasAnyRoles>
 			</div>
 
 
 
 			<div style="float: right">
-				您好，${roleName }<a
-					href="javascript:;" class="easyui-linkbutton"
-					data-options="plain:true">修改密码</a> <a
-					href="${ctx }/logout.do" class="easyui-linkbutton"
-					data-options="plain:true">退出</a> 当前事件:<s:property
-						value="#session.event.location" /> <s:property
-						value="#session.event.magnitude" />级
-				
+				您好，${roleName }<a href="javascript:;" class="easyui-linkbutton" data-options="plain:true">修改密码</a> <a href="${ctx }/logout.do" class="easyui-linkbutton" data-options="plain:true">退出</a> 当前事件:
+				<s:property value="#session.event.location" />
+				<s:property value="#session.event.magnitude" />
+				级
+
 			</div>
 		</div>
 		<div id="main">
 			<div id="left">
-				<iframe name="leftFrame" width="100%" height="100%"
-					src="${ctx }/left1.jsp" frameborder="0" scrolling="no"></iframe>
+				<iframe name="leftFrame" width="100%" height="100%" src="${ctx }/left1.jsp" frameborder="0" scrolling="no"></iframe>
 			</div>
 			<div id="right">
-				<iframe id="rightFrame" name="rightFrame" width="100%" height="100%"
-					src="" frameborder="0" scrolling="auto"></iframe>
+				<iframe id="rightFrame" name="rightFrame" width="100%" height="100%" src="" frameborder="0" scrolling="auto"></iframe>
 			</div>
 		</div>
 
