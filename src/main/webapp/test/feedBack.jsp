@@ -36,7 +36,6 @@ $(document).ready(function(){
 	<h3>发送协同控制反馈消息</h3>
 	将wsdl路径配置在码表中webService-->controlFeedback 
 	<s:form action="ControlFeedback/feedBack.do" namespace="/wstest">
-		<%-- <s:select label="事件" name="eventId" list="events" listKey="eventId" listValue="eventId"></s:select> --%>
 		<tr>
 			<td class="tdLabel"><label for="eventId" class="label" >地震序列:</label></td>
 			<td>

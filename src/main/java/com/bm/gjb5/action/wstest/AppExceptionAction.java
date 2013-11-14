@@ -20,7 +20,7 @@ public class AppExceptionAction {
 		} catch (Exception e) {
 			Flash.current().error("发送失败:"+e);
 		}
-		return "/test/sendException.jsp";
+		return "/test/exceptionMonitor.jsp";
 	}
 
 	public int getLevel() {

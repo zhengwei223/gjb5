@@ -21,7 +21,7 @@ public class AppRecordAction {
 		} catch (Exception e) {
 			Flash.current().error("发送失败"+e);
 		}
-		return "/test/sendAppRecord.jsp";
+		return "/test/appRecord.jsp";
 	}
 
 	public String getLogtitle() {

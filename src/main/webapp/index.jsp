@@ -165,7 +165,8 @@
 					class="cs-navi-tab">异常监控接口调试</a></div>
 					<div><a href="javascript:void(0);" src="${ctx }/test/appMonitor.jsp"
 					class="cs-navi-tab">应用监控接口调试</a></div>
-					
+					<div><a href="javascript:void(0);" src="${ctx }/test/dataUpdate.jsp"
+					class="cs-navi-tab">产出物通知消息接口调试</a></div>
 				</div>
 			</div>
 			<div title="数据管理">

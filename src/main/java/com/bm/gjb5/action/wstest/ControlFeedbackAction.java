@@ -27,6 +27,7 @@ public class ControlFeedbackAction extends BaseStruts2Action{
 			Flash.current().success("调用成功"); 
 		} catch (Exception e) {
 			Flash.current().error("调用发生异常"+e); 
+			e.printStackTrace();
 		}
 		return toFeedBack();
 	}
